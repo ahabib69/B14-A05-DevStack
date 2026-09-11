@@ -615,6 +615,9 @@ footer {
   .nav-inner {
     height: 64px;
     padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .auth {
