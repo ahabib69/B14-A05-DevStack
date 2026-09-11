@@ -618,15 +618,19 @@ footer {
   }
 
   .auth {
-    gap: 2px;
+    gap: 6px;
+    align-items: center;
   }
 
   .signin {
-    display: none;
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 13px;
   }
 
   .signup {
-    padding: 9px 12px;
+    padding: 8px 12px;
+    font-size: 13px;
   }
 
   .hero {
