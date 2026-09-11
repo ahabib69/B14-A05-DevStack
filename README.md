@@ -62,7 +62,7 @@ key, React can mix up items or re-render more than it needs to.
 
 **6. What is conditional rendering? Show one place you used it (example: the empty stack message).**
 Conditional rendering means showing different UI depending on some condition. I used it in
-`YourStack.jsx`: if the stack array is empty, it shows a placeholder message ("Nothing here yet…");
+`Stack.jsx`: if the stack array is empty, it shows a placeholder message ("Your stack is empty");
 otherwise it renders the list of added technologies and the "Remove All" button.
 
 **7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?**
@@ -73,5 +73,5 @@ happens, like a button click.
 
 ## 📤 Submission
 
-- GitHub Repository Link:
-- Live Site Link:
+- GitHub Repository Link: https://github.com/ahabib69/B14-A05-DevStack
+- Live Site Link: https://friendly-blini-5a7328.netlify.app
