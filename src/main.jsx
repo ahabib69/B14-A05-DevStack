@@ -50,7 +50,6 @@ function Navbar() {
   );
 }
 
-
 // Hero Section
 function Hero() {
   return (
@@ -100,7 +99,6 @@ function Hero() {
   );
 }
 
-
 // Technology Card
 function TechCard({ tech, selected, onAdd }) {
   return (
@@ -137,7 +135,6 @@ function TechCard({ tech, selected, onAdd }) {
     </article>
   );
 }
-
 
 // User Stack
 function Stack({ stack, onRemove, onClear }) {
@@ -203,7 +200,6 @@ function Stack({ stack, onRemove, onClear }) {
   );
 }
 
-
 // Main Application
 function App() {
   const [techs, setTechs] = useState([]);
@@ -219,7 +215,6 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-
 
   // Add technology to stack
   const add = (technology) => {
@@ -245,7 +240,6 @@ function App() {
     );
   };
 
-
   // Remove technology from stack
   const remove = (technology) => {
     setStack((currentStack) =>
@@ -256,7 +250,6 @@ function App() {
 
     toast.info(`${technology.name} removed.`);
   };
-
 
   // Clear the complete stack
   const clear = () => {
@@ -269,7 +262,6 @@ function App() {
     toast.info("Your stack has been cleared.");
   };
 
-
   return (
     <>
       <Navbar />
@@ -278,7 +270,6 @@ function App() {
 
         {/* Hero */}
         <Hero />
-
 
         {/* Technology Library */}
         <section
@@ -303,7 +294,6 @@ function App() {
               {techs.length} technologies
             </div>
           </div>
-
 
           {loading ? (
             <div className="loading">
@@ -337,7 +327,6 @@ function App() {
           )}
         </section>
 
-
         {/* Projects Section */}
         <section
           id="projects"
@@ -361,7 +350,6 @@ function App() {
           </p>
         </section>
 
-
         {/* About Section */}
         <section
           id="about"
@@ -380,7 +368,6 @@ function App() {
 
       </main>
 
-
       {/* Footer */}
       <footer id="contact">
 
@@ -398,10 +385,13 @@ function App() {
           </p>
 
           <div className="social">
-            GitHub&nbsp;&nbsp; Twitter&nbsp;&nbsp; LinkedIn
+            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            &nbsp;&nbsp;
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
+            &nbsp;&nbsp;
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
-
 
         <div>
           <h4>Product</h4>
@@ -411,7 +401,6 @@ function App() {
           <a>Roadmap</a>
         </div>
 
-
         <div>
           <h4>Company</h4>
 
@@ -419,7 +408,6 @@ function App() {
           <a>Contact</a>
           <a>Careers</a>
         </div>
-
 
         <div>
           <h4>Legal</h4>
@@ -429,13 +417,11 @@ function App() {
           <a>Cookies</a>
         </div>
 
-
         <div className="copyright">
           © 2026 DevStack. All rights reserved.
         </div>
 
       </footer>
-
 
       <ToastContainer
         position="top-right"
@@ -444,7 +430,6 @@ function App() {
     </>
   );
 }
-
 
 // Render Application
 createRoot(
