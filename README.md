@@ -7,10 +7,10 @@ the ones you use or want to learn.
 ## 🛠 Technology Used
 
 - React (Vite)
-- Tailwind CSS
 - JavaScript (ES6+)
 - React-Toastify
 - JSON for the technology data
+- Plain CSS with a shared gradient theme (orange → pink → violet)
 
 ## ✨ Features
 
